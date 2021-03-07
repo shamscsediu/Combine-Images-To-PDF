@@ -12,6 +12,7 @@ class App extends Component {
         "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//7VhBQTLAzPGAlmZg0EJCgySjsvEgEuQIoEjlKxIX.mp3",
       ],
       autoplay: true,
+      volume: 0.4,
       loop: true,
     });
     sound.play();
