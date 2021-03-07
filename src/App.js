@@ -18,14 +18,12 @@ class App extends Component {
   };
   constructor(props) {
     super(props);
-
-
+    this.soundPlay();
     this.particlesInit = this.particlesInit.bind(this);
     this.particlesLoaded = this.particlesLoaded.bind(this);
   }
 
   particlesInit(main) {
-    soundPlay();
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   }
