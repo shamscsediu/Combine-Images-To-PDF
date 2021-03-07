@@ -1,4 +1,3 @@
-import { Howl } from "howler";
 import React, { Component } from "react";
 import Particles from "react-tsparticles";
 import "./App.css";
@@ -6,20 +5,8 @@ import FileUpload from "./components/fileUpload/fileUpload";
 import HeaderArea from "./components/header/headerArea";
 
 class App extends Component {
-  soundPlay = () => {
-    const sound = new Howl({
-      src: [
-        "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//7VhBQTLAzPGAlmZg0EJCgySjsvEgEuQIoEjlKxIX.mp3",
-      ],
-      autoplay: true,
-      volume: 0.4,
-      loop: true,
-    });
-    sound.play();
-  };
   constructor(props) {
     super(props);
-    this.soundPlay();
     this.particlesInit = this.particlesInit.bind(this);
     this.particlesLoaded = this.particlesLoaded.bind(this);
   }
