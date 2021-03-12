@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Particles from "react-tsparticles";
+import songBack from "./assets/true.mp3";
 import "./App.css";
 import FileUpload from "./components/fileUpload/fileUpload";
 import HeaderArea from "./components/header/headerArea";
@@ -12,13 +13,11 @@ class App extends Component {
   }
 
   particlesInit(main) {
-
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   }
-
-  particlesLoaded(container) {
-  }
+  particlesLoaded(container) {}
   render() {
+    
     return (
       <div>
         <Particles
@@ -104,7 +103,7 @@ class App extends Component {
             detectRetina: true,
           }}
         />
-
+        <audio autoPlay={true} loop={true} src={songBack}></audio>
         <HeaderArea />
         <div className="tc">
           <h1 className="f2 p-2 white">
