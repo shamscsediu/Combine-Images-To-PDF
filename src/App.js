@@ -103,7 +103,7 @@ class App extends Component {
             detectRetina: true,
           }}
         />
-        <audio autoPlay={true} loop={true} src={songBack}></audio>
+        <audio autoPlay loop src={songBack}></audio>
         <HeaderArea />
         <div className="tc">
           <h1 className="f2 p-2 white">
